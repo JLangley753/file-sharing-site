@@ -1,0 +1,105 @@
+/* Core Styles */
+
+body {
+  background-color: white;
+  color: #000000;
+  font-family: 'Noto Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Navbar Styling */
+
+.navbar {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+}
+
+.navbar h2{
+  padding: 0 10px;
+}
+
+.navbar h3 {
+  padding: 5px 10px;
+}
+
+.logo a {
+  color: #CF5C36;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toolbar a {
+  color: #000000;
+  transition: 0.2s ease;
+}
+
+.toolbar a:hover {
+  color: #CF5C36;
+  transition: 0.2s ease;
+}
+
+/* Main Element Styling */ /* Main element is the section that appears (either file box or the greeting page depending if the user is signed in, toolbar headings also change) */
+
+.mainelement {
+  position: relative;
+  top: 70px;
+}
+
+.signedin {
+  display: none !important; /* Move this to 'signed out' to see the signed in page */
+}
+
+.signedout {
+}
+
+/* Files Box Styling */
+
+.filesboxwrap {
+  height: auto;
+  margin: 0;
+  padding: 5px;
+}
+
+.filesbox {
+  background-color: white;
+  box-shadow: 2px 2px 5px 2px rgba(119,119,119,1);
+  height: 400px;
+  margin: 20px 5px;
+  padding: 10px;
+}
+
+.filesbox p {
+  padding: 0;
+  margin: 0;
+}
+
+/* Greeting Box Styling */
+
+.greeting {
+  display: inline-block;
+  margin: 100px 20px;
+}
+
+.greeting h1, .greeting h3 {
+  margin: 30px 0;
+}
+
+.greeting img {
+  margin: 40px 0;
+  width: 100%;
+}
